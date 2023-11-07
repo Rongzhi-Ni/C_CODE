@@ -1,0 +1,144 @@
+//  HelloWorld.c
+//
+//  Simple program to print a message to the console.
+//
+//  Created by Craig A. Evans on 06/02/2014.
+
+// we include the 'standard input/output' header file
+// This library contains functions for reading/printing data
+#include <stdio.h>
+
+// out 'main' function. Every C code starts executing in main.
+// imagine it is the main flowchart in your program.
+int main(void) {
+    
+    // print a message to the console
+    // note the message is contained within quotes
+    // the \n starts a new line and makes it look nicer in the console
+    printf("Hello, World!\n");
+    
+    // end of main function - not returning anything
+    return 0;
+    
+}
+
+//  Sum.c
+//
+//  Simple program to calculate a simple algorithm.
+//
+//  Created by Marco Califano on 15/09/2015.
+
+// we include the 'standard input/output' header file
+// This library contains functions for reading/printing data
+#include <stdio.h>
+
+int main() {
+	
+	int a = 0,b = 1,c = 2,d = 3, e = 4; // variables to be used
+	a = b - c + d * e;
+    printf("%d", a); /* will print 1-2+3*4 = 11 */
+ 
+ 
+  return 0;
+}
+
+//  IntegerDivision.c
+//
+//  Simple program to elucidate the concept of integer division and the use of type casting.
+//
+//  Created by M. Califano 26/01/2021.
+
+// we include the 'standard input/output' header file
+// This library contains functions for reading/printing data
+#include <stdio.h>
+
+int main()
+{
+    int i=2;
+    int j=3;
+    float d;
+// despite the definition of d as a float if we do not resort to type casting, this is an integer division
+// that should yield 1 (try removing the "(float)")
+    d=(float) j/i;
+// here we print the float d to 1 decimal (to print to n decimals use "%.nf")
+    printf("%d divided by %d is %.1f\n",j,i,d);
+
+    return 0;
+}
+
+//  Average.c
+//
+//  Simple program to print the average of 3 marks.
+//
+//  Created by Marco Califano on 15/09/2015.
+
+// we include the 'standard input/output' header file
+// This library contains functions for reading/printing data 
+#include <stdio.h>
+
+int main() {
+  
+  int average;   // variable to store average
+
+  grades[0] = 80;  // first mark
+  grades[2] = 90;  // last mark
+  // calculate the average
+  average = (grades[0] + grades[1] + grades[2]) / 3;  
+  // print it out
+  printf("The average of the 3 grades is: %d", average);
+
+  return 0;
+}
+
+//  string_comp.c
+//
+//  Simple program to work on strings.
+//
+//  Created by Marco Califano on 15/09/2015.
+
+// we include the 'standard input/output' header file
+// This library contains functions for reading/printing data
+#include <stdio.h>
+
+int main() {
+  /* define first_name */
+  /* define last_name */
+  char name[100];
+
+  /* testing code */
+  if (strncmp(first_name, "John") != 0) return 1;
+  if (strncmp(last_name, "Doe") != 0) return 1;
+
+  last_name[0] = 'B';
+  sprintf(name, "%s %s", first_name, last_name);
+  if (strncmp(name, "John Boe", 100) == 0) {
+      printf("Done!\n");
+  }
+
+  return 0;
+}
+
+//  strings.c
+//
+//  Simple program to work on strings.
+//
+//  Created by Marco Califano on 15/09/2015.
+
+// we include the 'standard input/output' header file
+// This library contains functions for reading/printing data
+#include <stdio.h>
+
+int main() {
+  
+  /* define first_name */
+  /* define last_name */
+  
+  char name[100];   // define string for full name
+
+  sprintf(name, "%s %s", first_name, last_name); //write first_name and last_name to name
+  
+  printf("My name is %s\n", name);
+  
+
+  return 0;
+}
