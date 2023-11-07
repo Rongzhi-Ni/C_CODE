@@ -22,6 +22,14 @@ int main(void) {
     
 }
 
+
+
+
+
+
+
+
+
 //  Sum.c
 //
 //  Simple program to calculate a simple algorithm.
@@ -41,6 +49,15 @@ int main() {
  
   return 0;
 }
+
+
+
+
+
+
+
+
+
 
 //  IntegerDivision.c
 //
@@ -66,6 +83,16 @@ int main()
     return 0;
 }
 
+
+
+
+
+
+
+
+
+
+
 //  Average.c
 //
 //  Simple program to print the average of 3 marks.
@@ -89,6 +116,16 @@ int main() {
 
   return 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 //  string_comp.c
 //
@@ -117,6 +154,16 @@ int main() {
 
   return 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 //  strings.c
 //
