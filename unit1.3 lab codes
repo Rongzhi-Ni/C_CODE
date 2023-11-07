@@ -1,0 +1,389 @@
+//
+//  If.c
+
+//
+//  Demonstrates an if statement
+
+//
+//  Created by Craig A. Evans on 06/02/2014.
+
+
+// include standard i/o library for scanf and printf
+
+#include <stdio.h>
+
+int 
+main(void) {
+    
+    
+int N;   // variable to store number
+
+    
+// print a prompt to the user
+    
+printf("Enter an integer to test if it is negative:\n");
+    
+scanf("%d",&N);  // read in a value from the keyboard and store in N
+    
+// the %d is for reading in integers. Don't forget the & before the variable name
+    
+// when reading in
+
+    
+// check if N is less than 0
+    
+if (N<0) {
+        
+// if it is, print a suitable message. Here we print the value of N to the console
+        
+// the %d will be replaced by the value stored in the variable
+        
+	printf("%d is negative\n",N);
+    
+}
+    
+    
+return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  IfElse.c
+
+//
+//  Demonstrates an if..else statement
+
+//
+//  Created by Craig A. Evans on 06/02/2014.
+
+
+// include standard i/o library for scanf and printf
+
+#include <stdio.h>
+
+
+int main(void) {
+    
+    
+int N;   // variable to store number
+
+    
+// print a prompt to the user
+    
+printf("Enter an integer to test if it is positive or negative:\n");
+    
+scanf("%d",&N);  // read in a value from the keyboard and store in N
+    
+// the %d is for reading in integers. Don't forget the & before the variable name
+    
+// when reading in
+
+    
+// check if N is less than 0
+    
+if (N<0) {
+        
+// if it is, print a suitable message. Here we print the value of N to the console
+        
+// the %d will be replaced by the value stored in the variable
+        
+	printf("%d is negative\n",N);
+    
+}
+    
+else {
+        
+// if it not less than 0, it must be positive, so print out a suitable message
+        
+	printf("%d is positive\n",N);
+    
+}
+    
+    
+return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  IfElseifElse.c
+
+//
+//  Prints out the degree classification depending on mark
+
+//
+//  Created by Craig A. Evans on 06/02/2014.
+
+
+// include standard i/o library for scanf and printf
+
+#include <stdio.h>
+
+
+int main(void) {
+    
+    
+int grade;   // variable to store number
+
+    
+// print a prompt to the user
+    
+printf("Enter your grade:\n");
+    
+scanf("%d",&grade);  // read in a value from the keyboard and store in grade variable
+    
+// the %d is for reading in integers. Don't forget the & before the variable name
+    
+// when reading in
+    
+    
+// check the value of grade and print out the relevant degree classification
+    
+if (grade >= 70) {
+        
+	printf("First-class.\n");
+    
+}
+ else if (grade >= 60) {
+        
+	printf("Upper Second-class.\n");
+    
+}
+ else if (grade >= 50) {
+        
+	printf("Lower Second-class.\n");
+    
+}
+ else if (grade >= 40) {
+        
+	printf("Third-class.\n");
+    
+}
+ else {
+        
+	printf("Fail.\n");
+    
+}
+        
+    
+    
+return 0;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  While.c
+
+//
+//  Prints out the sum of numbers less than 10
+
+//
+//  Created by Craig A. Evans on 06/02/2014.
+
+
+// include standard i/o library for scanf and printf
+
+#include <stdio.h>
+
+int 
+main(void) {
+    
+    
+int sum = 0;   // variable to store sum, initialised to 0
+    
+int i = 0;     // counter for the number of loops, initialised to 0
+
+    
+while (i < 10) {
+        
+	sum = sum + i;  // add i to sum and store back in sum.  Can also do sum+=i;
+        	
+	i=i+1;  // increment i by 1.  Can also do i++;
+        
+	printf("i = %d sum = %d\n",i,sum);  // print out i and sum for debugging
+    
+}
+    
+    
+printf("Sum = %d\n",sum);  // print final sum
+    
+    
+return 0;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  while_over5.c
+//
+//  Prints out the array elements if their value is between 5 and 10
+//
+//  Created by M. Califano on 25/09/2015.
+
+// include standard i/o library for scanf and printf
+#include <stdio.h>
+
+int main() {
+    int array[] = {1, 7, 4, 5, 9, 3, 5, 11, 6, 3};
+    int i = 0;
+
+    while (i < 10) {
+        /* your code goes here */
+
+        printf("%d\n", array[i]);
+        i++;
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  DoWhile.c
+
+//
+//  Prints out the sum of numbers less than 10
+
+//
+//  Created by Craig A. Evans on 06/02/2014.
+
+
+// include standard i/o library for scanf and printf
+
+#include <stdio.h>
+
+
+int main(void) {
+    
+    
+int sum = 0;   // variable to store sum, initialised to 0
+    
+int i = 0;     // counter for the number of loops, initialised to 0
+
+    
+do {
+        
+        sum = sum + i;  // add i to sum and store back in sum.  Can also do sum+=i;
+        
+	i=i+1;          // increment i by 1.  Can also do i++;
+        
+	printf("i = %d sum = %d\n",i,sum);  // print out i and sum for debugging
+    
+}while (i < 10);
+    
+    
+printf("Sum = %d\n",sum);  // print final sum
+    
+    
+return 0;
+    
+
+}
+
+
+
+
+
+
+
+
+
+//
+//  for_list1_10.c
+//
+//  Prints out the numbers 1 to 10
+//
+//  Created by M. Califano on 25/09/2015.
+
+// include standard i/o library for scanf and printf
+#include <stdio.h>
+
+int main(void) { 
+
+   int i;   // counter for the number of loops
+   for (i = 1; i < 11; i++) 
+   {
+    printf("%d\n", i);  // print out i
+   }
+  
+  return 0;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
