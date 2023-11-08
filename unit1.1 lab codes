@@ -119,10 +119,27 @@ int main() {
 
 
 
+-------------------------------------------------------------------------------------------------------------------------------
 
+//  Average.c
+#include <stdio.h>
 
+int main() {
 
+	int average;   // variable to store average
+	int grades[3];
+	grades[0] = 80;  // first mark
+	grades[2] = 90;  // last mark
+	grades[1] = 85;
+	// calculate the average
+	average = (grades[0] + grades[1] + grades[2]) / 3;
+	// print it out
+	printf("The average of the 3 grades is: %d", average);
 
+	return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
 
 
 
